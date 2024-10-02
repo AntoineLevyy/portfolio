@@ -354,3 +354,76 @@ nav ul {
     display: block;
 }
 
+.timeline-container {
+    position: relative;
+    padding-left: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 2px;
+    height: 100%;
+    background-color: rgba(160, 160, 160, 0.3);
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -30px;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background-color: rgba(40, 40, 40, 0.8);
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    top: calc((var(--year) - 2017) / (2024 - 2017) * 100%);
+}
+
+.experience-card {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.experience-card::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -32px;
+    width: 20px;
+    height: 2px;
+    background-color: rgba(160, 160, 160, 0.3);
+}
+
+.experience-card::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -38px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid rgba(40, 40, 40, 0.8);
+}
+
+/* Adjust existing experience-card styles */
+.experience-card {
+    background-color: rgba(40, 40, 40, 0.8);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.experience-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* ... rest of your existing styles ... */
