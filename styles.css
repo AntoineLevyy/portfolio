@@ -318,7 +318,7 @@ nav ul {
     background-color: rgba(40, 40, 40, 0.8);
     border-radius: 20px;
     overflow: hidden;
-    max-width: 450px; /* Adjusted to be just long enough to see 'Blog' */
+    max-width: 750px; /* Adjusted to be just long enough to see 'Blog' */
     margin: 0 auto;
 }
 
