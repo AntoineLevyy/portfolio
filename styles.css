@@ -311,14 +311,14 @@ nav ul {
 
 .tab-navigation ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     list-style-type: none;
     padding: 0;
     margin: 0;
     background-color: rgba(40, 40, 40, 0.8);
     border-radius: 20px;
     overflow: hidden;
-    max-width: 400px; /* Increased max-width to accommodate the new item */
+    max-width: 450px; /* Adjusted to be just long enough to see 'Blog' */
     margin: 0 auto;
 }
 
@@ -333,7 +333,8 @@ nav ul {
     text-decoration: none;
     color: #a0a0a0;
     transition: all 0.3s ease;
-    font-size: 0.8rem; /* Slightly smaller font size to fit all items */
+    font-size: 0.9rem;
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 .tab-navigation a.active {
