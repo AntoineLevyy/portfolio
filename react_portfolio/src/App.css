@@ -24,7 +24,7 @@
 
 .marquee-content span {
   display: inline-block;
-  padding: 0 160px; /* Increased padding for even more space between words */
+  padding: 0 100px; /* Increased padding for even more space between words */
 }
 
 @keyframes marquee {
