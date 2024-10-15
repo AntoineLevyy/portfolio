@@ -8,7 +8,7 @@
 .topbar__marquee {
   overflow: hidden;
   background-color: transparent;
-  margin-bottom: 60px; /* Added margin to increase space below the marquee */
+  margin-bottom: 100px; /* Increase this value to add more space below the marquee */
 }
 
 .marquee {
@@ -24,7 +24,11 @@
 
 .marquee-content span {
   display: inline-block;
-  padding: 0 160px; /* Increased padding for even more space between words */
+  padding: 0 100px;
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  margin-bottom: 40px;
 }
 
 @keyframes marquee {
@@ -37,9 +41,15 @@
 }
 
 h1 {
-  margin-top: 120px; /* Increased margin-top to lower the title even more */
-  font-size: 2.5em;
-  color: #fff;
+  margin-top: 120px; /* Increase this value to move the title further down */
+  font-size: 3.5em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  background: linear-gradient(to right, #c0c0c0, #e8e8e8, #c0c0c0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
 body {
