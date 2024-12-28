@@ -4,6 +4,7 @@ import Navigation from './components/Navigation';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Blog from './components/Blog';
+import MyChatbot from './components/Chatbot';
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         {activeSection === 'contact' && <Contact />}
         {activeSection === 'blog' && <Blog />}
       </div>
+      <MyChatbot />
     </div>
   );
 }
