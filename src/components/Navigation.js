@@ -14,7 +14,7 @@ function Navigation({ activeSection, setActiveSection }) {
           <button onClick={() => setActiveSection('projects')}>Projects</button>
         </li>
         <li className={activeSection === 'blog' ? 'active' : ''}>
-          <button onClick={() => setActiveSection('blog')}>Blog</button>
+          <button onClick={() => setActiveSection('blog')}>Blogs</button>
         </li>
       </ul>
     </nav>

@@ -1,16 +1,29 @@
 import React from 'react';
 
 function Blog() {
+  const blogPosts = [
+    {
+      title: "Levy Media",
+      description: "Where my brother and I write about what comes to mind. Mainly business and tech.",
+      link: "https://levy.media/"
+    },
+    {
+      title: "My Journey",
+      description: "Where I document my entrepreneurial journey.",
+      link: "https://google.com"
+    }
+  ];
+
   return (
-    <div className="blog-section">
-      <div className="blog-post">
-        <h3>
-          <a href="https://www.theaihire.com/blog/future-of-startups" target="_blank" rel="noopener noreferrer">
-            The Future of Startups: Verticalised Agents as First Hires
+    <div className="blog-grid">
+      {blogPosts.map((post, index) => (
+        <div key={index} className="blog-card">
+          <a href={post.link} target="_blank" rel="noopener noreferrer" className="blog-title-link">
+            <h3>{post.title}</h3>
           </a>
-        </h3>
-        <p>Speculating on the impact of A.I systems, specifically verticalised agents, as tech companies first hires.</p>
-      </div>
+          <p>{post.description}</p>
+        </div>
+      ))}
     </div>
   );
 }
