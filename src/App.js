@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
-import Navigation from './components/Navigation';
+import About from './components/About';
+import Work from './components/Work';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
 import Blog from './components/Blog';
 import MyChatbot from './components/Chatbot';
 import './App.css';
 
 function App() {
-  const [activeSection, setActiveSection] = useState('projects');
+  const [activeSection, setActiveSection] = useState('about');
 
   return (
     <div className="App">
-      <Header />
-      <Navigation activeSection={activeSection} setActiveSection={setActiveSection} />
+      <Header activeSection={activeSection} setActiveSection={setActiveSection} />
       <div className="container">
+        {activeSection === 'about' && <About />}
+        {activeSection === 'work' && <Work />}
         {activeSection === 'projects' && <Projects />}
-        {activeSection === 'contact' && <Contact />}
         {activeSection === 'blog' && <Blog />}
       </div>
       <MyChatbot />
