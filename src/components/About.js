@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import hi from '../assets/images/hi.png';
+
 
 function About() {
   return (
@@ -9,6 +10,7 @@ function About() {
         I am now working on my own startup after being incubated at Entrepeneur First in Paris. Looking to build products, companies and meet great people along the way.
       </p>
       <img src={hi} alt="Antoine Lévy" style={{ display: 'block', margin: '20px auto', maxWidth: '30%', height: 'auto' }} />
+      
     </div>
   );
 }

@@ -4,13 +4,13 @@ function Blog() {
   const blogPosts = [
     {
       title: "Levy Media",
-      description: "Where my brother and I write about what comes to mind. Mainly business and tech.",
+      description: "Where my brother, Nicolas Levy, and I write about what comes to mind. Mainly business and tech.",
       link: "https://levy.media/"
     },
     {
-      title: "My Journey",
-      description: "Where I document my entrepreneurial journey.",
-      link: "https://google.com"
+      title: "Valantoine",
+      description: "Where my co-founder, Antoine Levy, and I document our journey building Laneo.",
+      link: "https://valantoine.com"
     }
   ];
 
