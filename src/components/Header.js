@@ -11,7 +11,7 @@ function Header({ activeSection, setActiveSection }) {
               <a href="mailto:antoine.levy@example.com" aria-label="Email">
                 <i className="fas fa-envelope"></i>
               </a>
-              <a href="https://linkedin.com/in/antoinelevy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://linkedin.com/in/antoinelevyy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <i className="fab fa-linkedin"></i>
               </a>
               <a href="https://github.com/antoinelevyy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
