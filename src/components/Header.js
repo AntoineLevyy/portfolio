@@ -14,7 +14,7 @@ function Header({ activeSection, setActiveSection }) {
               <a href="https://linkedin.com/in/antoinelevy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <i className="fab fa-linkedin"></i>
               </a>
-              <a href="https://github.com/antoinelevy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/antoinelevyy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <i className="fab fa-github"></i>
               </a>
             </div>

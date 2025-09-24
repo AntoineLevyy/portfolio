@@ -7,14 +7,12 @@ function About() {
       <div className="about-content">
         <div className="profile-section">
           <img src={profilePic} alt="Antoine Lévy" className="profile-image" />
-          <h2 className="profile-name">Antoine Lévy</h2>
-          <p className="profile-title">Full Stack Developer & Entrepreneur</p>
+          <p className="profile-title">Currently Building <a href="https://adsperform.com" target="_blank" rel="noopener noreferrer">adsperform</a></p>
         </div>
         
         <div className="bio-section">
           <p>
-            I am passionately working my way around Tech. I have spent the first 3 years of my career building Digital Media products at Publicis in London.
-            I am now working on my own startup after being incubated at Entrepreneur First in Paris. Looking to build products, companies and meet great people along the way.
+            I am an early stage founder building software for performance marketing. Daily work includes shipping fast, talking to users, and building my co-founder relationship.
           </p>
         </div>
       </div>

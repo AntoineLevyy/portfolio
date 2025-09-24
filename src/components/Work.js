@@ -2,21 +2,21 @@ import React from 'react';
 
 const workData = [
   {
-    period: '2025 - Present',
+    period: 'Presently',
     title: 'Founder',
     company: 'Startup',
-    description: 'Building innovative products and companies. Currently working on my own startup after being incubated at Entrepreneur First in Paris.'
+    description: 'Currently working on software for performance marketing. Failing and learning about customer discovery and development, product and company building, distribution and fundraising. Raised £250K.'
   },
   {
     period: '2021 - 2024',
     title: 'Digital Media Product Manager',
     company: 'Publicis Media, London',
-    description: 'Built Digital Media products and solutions. Led product development and strategy for major media campaigns.'
+    description: 'Built Digital Media products and solutions. Led product development and strategy for major media campaigns. Generated +$10M in revenue for the business.'
   },
   {
     period: '2018 - 2021',
     title: 'Professional Football',
-    company: 'Various Clubs',
+    company: 'Spain, Australia, USA',
     description: 'Played professional football, developing discipline, teamwork, and leadership skills that translate to business.'
   }
 ];
@@ -25,7 +25,6 @@ function Work() {
   return (
     <div className="work-modern">
       <div className="work-content">
-        <h2 className="work-title">Professional Experience</h2>
         <div className="timeline-modern">
           {workData.map((item, index) => (
             <div key={index} className="timeline-item-modern">
