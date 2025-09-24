@@ -4,7 +4,7 @@ const workData = [
   {
     period: 'Presently',
     title: 'Founder',
-    company: 'Startup',
+    company: 'Startup, San Francisco',
     description: 'Currently working on software for performance marketing. Failing and learning about customer discovery and development, product and company building, distribution and fundraising. Raised £250K.'
   },
   {
