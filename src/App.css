@@ -494,24 +494,37 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 1.5rem;
-  justify-items: center;
+  justify-items: start; /* Changed from center to align better with mixed sizes */
 }
 
 .video-card-mini {
   width: 100%;
-  max-width: 180px;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
+.video-card-mini.portrait {
+  max-width: 180px;
+}
+
+.video-card-mini.landscape {
+  max-width: 320px;
+  grid-column: span 2;
+}
+
 .video-wrapper {
-  aspect-ratio: 9 / 16;
   width: 100%;
   background-color: #000;
   border-radius: 8px;
   overflow: hidden;
   border: 1px solid var(--border-color);
+}
+
+@media (max-width: 640px) {
+  .video-card-mini.landscape {
+    grid-column: span 1;
+  }
 }
 
 .video-wrapper video {
