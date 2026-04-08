@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Header from './components/Header';
 import About from './components/About';
-import Work from './components/Work';
-import Interests from './components/Interests';
 
 function App() {
-  const [activeSection, setActiveSection] = useState('about');
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
   useEffect(() => {
@@ -40,16 +36,36 @@ function App() {
 
   return (
     <div className="App">
-      <Header 
-        activeSection={activeSection} 
-        setActiveSection={setActiveSection} 
-        theme={theme}
-        toggleTheme={toggleTheme}
-      />
+      <header className="header">
+        <div className="header-content">
+          <div className="header-left">
+            <h1 className="special-name-gradient">Antoine Levy</h1>
+            <div className="contact-icons">
+              <a href="mailto:antoine.levy@example.com" aria-label="Email">
+                <i className="fas fa-envelope"></i>
+              </a>
+              <a href="https://linkedin.com/in/antoinelevyy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/antoinelevyy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i className="fab fa-github"></i>
+              </a>
+              <a href="https://x.com/AntoineLevy27" target="_blank" rel="noopener noreferrer" aria-label="X">
+                <i className="fab fa-x-twitter"></i>
+              </a>
+            </div>
+          </div>
+          <button
+            className="theme-toggle"
+            onClick={toggleTheme}
+            aria-label="Toggle dark mode"
+          >
+            {theme === 'light' ? <i className="fas fa-moon"></i> : <i className="fas fa-sun"></i>}
+          </button>
+        </div>
+      </header>
       <main className="main-content">
-        {activeSection === 'about' && <About />}
-        {activeSection === 'work' && <Work />}
-        {activeSection === 'interests' && <Interests />}
+        <About />
       </main>
     </div>
   );
