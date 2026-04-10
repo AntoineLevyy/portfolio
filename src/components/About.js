@@ -5,22 +5,22 @@ const projects = [
   {
     title: 'Adsperform',
     url: 'https://www.adsperform.com/',
-    description: 'AI-powered performance marketing platform.',
+    description: 'Performance marketing platform that automates creative testing. Built at Entrepreneurs First, raised £250K.',
   },
   {
     title: 'Couple Therapy',
     url: 'https://coupletherapy-six.vercel.app/',
-    description: 'Guided conversations for couples.',
+    description: 'AI-guided conversations that help couples communicate better. Built as a side project.',
   },
   {
     title: 'Agent Store',
     url: 'https://agentstore-eight.vercel.app/',
-    description: 'Marketplace for AI agents.',
+    description: 'Discover and deploy AI agents for business workflows. Curated marketplace.',
   },
   {
     title: 'XEOLint',
     url: 'https://xeolint.com/',
-    description: 'Catch end-of-life dependencies.',
+    description: 'Linting tool that catches visibility issues for AEO and SEO before they hurt rankings.',
   },
 ];
 
