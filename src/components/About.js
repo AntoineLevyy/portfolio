@@ -1,26 +1,36 @@
 import React from 'react';
 import profilePic from '../assets/images/profile.jpg';
 
-const projects = [
-  {
-    title: 'Adsperform',
-    url: 'https://www.adsperform.com/',
-    description: 'Performance marketing platform that automates creative testing. Built at Entrepreneurs First, raised £250K.',
-  },
-  {
-    title: 'Couple Therapy',
-    url: 'https://coupletherapy-six.vercel.app/',
-    description: 'AI-guided conversations that help couples communicate better. Built as a side project.',
-  },
+const apps = [
   {
     title: 'Agent Store',
-    url: 'https://agentstore-eight.vercel.app/',
-    description: 'Discover and deploy AI agents for business workflows. Curated marketplace.',
+    url: 'https://agentappstore.shop/',
+    description: 'Directory of consumer AI apps rated by their level of autonomy.',
   },
   {
-    title: 'XEOLint',
-    url: 'https://xeolint.com/',
-    description: 'Linting tool that catches visibility issues for AEO and SEO before they hurt rankings.',
+    title: 'Happy Couple',
+    url: 'https://happycouple.ai/',
+    description: 'AI relationship coach for real-time guidance via voice, text, or WhatsApp.',
+  },
+  {
+    title: 'Dopamen',
+    url: 'https://joindopamen.com/',
+    description: 'Personal growth platform with gamified real-world challenges.',
+  },
+  {
+    title: 'Start Small',
+    url: 'https://trystartsmall.com/',
+    description: 'A small daily habit tracker.',
+  },
+  {
+    title: 'Hair Match',
+    url: 'https://hairmatch-one.vercel.app/',
+    description: 'AI haircut recommendations from a selfie.',
+  },
+  {
+    title: 'Who Is Most Likely To',
+    url: 'https://whoismostlikely.lovable.app/',
+    description: 'A party game where friends answer playful "who is most likely to" questions about each other.',
   },
 ];
 
@@ -40,18 +50,37 @@ function About() {
 
       <div className="bio-section">
         <p>
-          Previously founded{' '}
-          <a href="https://www.adsperform.com/" target="_blank" rel="noopener noreferrer">
-            Adsperform
+          Excited about highly autonomous, agent-led companies. As a side project, building{' '}
+          <a
+            href="https://factory-command-center-v4.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Chronically Online
           </a>{' '}
-          at Entrepreneurs First.
+          with Mr Han.
         </p>
       </div>
 
+      <div className="intro-grid">
+        <div className="intro-block">
+          <h2 className="intro-title">Chronically Online</h2>
+          <p className="intro-description">
+            A consumer AI venture studio shipping AI-native apps for everyday life — relationships, growth, habits, and discovery.
+          </p>
+        </div>
+        <div className="intro-block">
+          <h2 className="intro-title">Mr Han</h2>
+          <p className="intro-description">
+            The autonomous operator running the factory. Reads ventures.yaml, spins up new apps, ships code, and keeps the lights on.
+          </p>
+        </div>
+      </div>
+
       <div className="projects-section">
-        <h2 className="section-label">Projects</h2>
-        <div className="projects-row">
-          {projects.map((project, index) => (
+        <h2 className="section-label">Apps</h2>
+        <div className="projects-row projects-row--grid">
+          {apps.map((project, index) => (
             <a
               key={index}
               href={project.url}
